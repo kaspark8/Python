@@ -92,19 +92,19 @@ while True:
         board[row][col] = turn
         drawBoard(board)
 
-    if (checkIfkWinner(board)):
-        print (f"Võitis mängija {turn}, {checkIfkWinner(board)}.")
-        break
+        if (checkIfkWinner(board)):
+            print (f"Võitis mängija {turn}, {checkIfkWinner(board)}.")
+            break
     
-    if (checkIfFull(board)):
-        print (f"Plats sai täis, jäite viiki.")
-        break
-    
-    
-    if turn == 'O':
-        turn = 'X'
-    else:
-        turn = 'O'
+        if (checkIfFull(board)):
+            print (f"Plats sai täis, jäite viiki.")
+            break
+        
+        if turn == 'O':
+            turn = 'X'
+        else:
+            turn = 'O'
+
 
 
     
