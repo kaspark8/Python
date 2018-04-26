@@ -1,5 +1,6 @@
 import random
 
+#room is 2D 
 posx = ['left', 'center', 'right']
 posy = ['top', 'middle', 'bottom']
 rooms = ['living', 'kitchen', 'sauna', 'master bedroom', 'kids bedroom', 'bedroom', 'quest room']
@@ -57,3 +58,8 @@ Sofa.myStats()
 Sofa.whereTheHellAmI()
 Sofa.moveMe("bedroom", "middle", "right")
 
+Table = objFurniture(name="Kitchen table", item="table", type="modern")
+Table.whoAmI()
+Table.myStats()
+Table.whereTheHellAmI()
+Table.moveMe("kitchen", "top", "center")
